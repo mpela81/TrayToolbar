@@ -160,7 +160,8 @@
             // 
             label1.AutoSize = true;
             label1.Dock = DockStyle.Top;
-            label1.Location = new Point(3, 0);
+            label1.Location = new Point(3, 3);
+            label1.Margin = new Padding(3, 3, 3, 0);
             label1.Name = "label1";
             label1.Padding = new Padding(5);
             label1.Size = new Size(107, 25);
@@ -172,7 +173,7 @@
             // 
             label2.AutoSize = true;
             label2.Dock = DockStyle.Top;
-            label2.Location = new Point(3, 75);
+            label2.Location = new Point(3, 78);
             label2.Name = "label2";
             label2.Padding = new Padding(5);
             label2.Size = new Size(107, 25);
@@ -184,7 +185,7 @@
             // 
             label4.AutoSize = true;
             label4.Dock = DockStyle.Top;
-            label4.Location = new Point(3, 125);
+            label4.Location = new Point(3, 128);
             label4.Name = "label4";
             label4.Padding = new Padding(5);
             label4.Size = new Size(107, 25);
@@ -196,7 +197,7 @@
             // 
             IgnoreFoldersTextBox.BorderStyle = BorderStyle.FixedSingle;
             IgnoreFoldersTextBox.Dock = DockStyle.Top;
-            IgnoreFoldersTextBox.Location = new Point(116, 128);
+            IgnoreFoldersTextBox.Location = new Point(116, 131);
             IgnoreFoldersTextBox.Name = "IgnoreFoldersTextBox";
             IgnoreFoldersTextBox.PlaceholderText = ".git; .github";
             IgnoreFoldersTextBox.Size = new Size(414, 23);
@@ -206,7 +207,8 @@
             // 
             label3.AutoSize = true;
             label3.Dock = DockStyle.Top;
-            label3.Location = new Point(3, 175);
+            label3.Location = new Point(3, 181);
+            label3.Margin = new Padding(3, 3, 3, 0);
             label3.Name = "label3";
             label3.Padding = new Padding(5);
             label3.Size = new Size(107, 25);
@@ -218,7 +220,7 @@
             // 
             label5.AutoSize = true;
             label5.Dock = DockStyle.Top;
-            label5.Location = new Point(3, 225);
+            label5.Location = new Point(3, 228);
             label5.Name = "label5";
             label5.Padding = new Padding(5);
             label5.Size = new Size(107, 25);
@@ -246,7 +248,7 @@
             AddFolderButton.AutoSize = true;
             AddFolderButton.Image = (Image)resources.GetObject("AddFolderButton.Image");
             AddFolderButton.ImageAlign = ContentAlignment.MiddleRight;
-            AddFolderButton.Location = new Point(116, 28);
+            AddFolderButton.Location = new Point(116, 31);
             AddFolderButton.Name = "AddFolderButton";
             AddFolderButton.Size = new Size(123, 25);
             AddFolderButton.TabIndex = 0;
@@ -260,7 +262,7 @@
             // 
             IgnoreFilesTextBox.BorderStyle = BorderStyle.FixedSingle;
             IgnoreFilesTextBox.Dock = DockStyle.Top;
-            IgnoreFilesTextBox.Location = new Point(116, 78);
+            IgnoreFilesTextBox.Location = new Point(116, 81);
             IgnoreFilesTextBox.Name = "IgnoreFilesTextBox";
             IgnoreFilesTextBox.PlaceholderText = ".bak; .config; .dll; .ico; .ini";
             IgnoreFilesTextBox.Size = new Size(414, 23);
@@ -270,7 +272,7 @@
             // 
             ThemeToggleButton.AutoSize = true;
             ThemeToggleButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ThemeToggleButton.Location = new Point(116, 178);
+            ThemeToggleButton.Location = new Point(116, 181);
             ThemeToggleButton.Name = "ThemeToggleButton";
             ThemeToggleButton.Size = new Size(182, 25);
             ThemeToggleButton.TabIndex = 5;
@@ -280,7 +282,7 @@
             // RunOnLoginCheckbox
             // 
             RunOnLoginCheckbox.AutoSize = true;
-            RunOnLoginCheckbox.Location = new Point(116, 278);
+            RunOnLoginCheckbox.Location = new Point(116, 281);
             RunOnLoginCheckbox.Name = "RunOnLoginCheckbox";
             RunOnLoginCheckbox.Size = new Size(97, 19);
             RunOnLoginCheckbox.TabIndex = 9;
@@ -300,7 +302,7 @@
             fontImageSizeTableLayout.Controls.Add(FontSizeInput, 0, 0);
             fontImageSizeTableLayout.Controls.Add(IconSizeSmallCheckbox, 2, 0);
             fontImageSizeTableLayout.Dock = DockStyle.Fill;
-            fontImageSizeTableLayout.Location = new Point(116, 228);
+            fontImageSizeTableLayout.Location = new Point(116, 231);
             fontImageSizeTableLayout.Name = "fontImageSizeTableLayout";
             fontImageSizeTableLayout.RowCount = 1;
             fontImageSizeTableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
@@ -310,7 +312,8 @@
             // IconSizeLargeCheckbox
             // 
             IconSizeLargeCheckbox.AutoSize = true;
-            IconSizeLargeCheckbox.Location = new Point(312, 3);
+            IconSizeLargeCheckbox.Location = new Point(312, 1);
+            IconSizeLargeCheckbox.Margin = new Padding(3, 1, 3, 3);
             IconSizeLargeCheckbox.Name = "IconSizeLargeCheckbox";
             IconSizeLargeCheckbox.Size = new Size(54, 19);
             IconSizeLargeCheckbox.TabIndex = 8;
@@ -324,15 +327,16 @@
             label6.Dock = DockStyle.Top;
             label6.Location = new Point(106, 0);
             label6.Name = "label6";
-            label6.Padding = new Padding(5);
-            label6.Size = new Size(97, 25);
+            label6.Padding = new Padding(5, 2, 5, 5);
+            label6.Size = new Size(97, 22);
             label6.TabIndex = 14;
             label6.Text = "Icon Size";
             label6.TextAlign = ContentAlignment.MiddleRight;
             // 
             // FontSizeInput
             // 
-            FontSizeInput.Location = new Point(3, 3);
+            FontSizeInput.Location = new Point(3, 1);
+            FontSizeInput.Margin = new Padding(3, 1, 3, 3);
             FontSizeInput.Maximum = new decimal(new int[] { 72, 0, 0, 0 });
             FontSizeInput.Minimum = new decimal(new int[] { 9, 0, 0, 0 });
             FontSizeInput.Name = "FontSizeInput";
@@ -344,7 +348,8 @@
             // 
             IconSizeSmallCheckbox.AutoSize = true;
             IconSizeSmallCheckbox.Checked = true;
-            IconSizeSmallCheckbox.Location = new Point(209, 3);
+            IconSizeSmallCheckbox.Location = new Point(209, 1);
+            IconSizeSmallCheckbox.Margin = new Padding(3, 1, 3, 3);
             IconSizeSmallCheckbox.Name = "IconSizeSmallCheckbox";
             IconSizeSmallCheckbox.Size = new Size(54, 19);
             IconSizeSmallCheckbox.TabIndex = 7;
